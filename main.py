@@ -53,14 +53,17 @@ class YandexDisk:
         
 class VK_USER:
     
-    def vk_info(user_id):
+    def __init__(self, user_id):
         with open('token.txt', 'r') as file_object:
             token = file_object.read().strip()
-            
+        self.token = token
+        self.user_id = user_id
+    
+    def vk_info(self):
         URL = 'https://api.vk.com/method/photos.get'
         params = {
-            'user_id': user_id,
-            'access_token': token,
+            'user_id': self.user_id,
+            'access_token': self.token,
             'v':'5.131',
             'album_id': 'profile',
             'extended': '1', 
@@ -70,51 +73,48 @@ class VK_USER:
         res = requests.get(URL, params=params).json()
         len_all_photo = len(res['response']['items'])
         all_photo = res['response']['items']
-        height = 0
-        width = 0
-        url_max = ''
-        photo_dict = []
-        photo_dict_all = []
-        file_name_list = []
-        likes = 0
-        file_name = ''
-        size_type = ''
-        size = ''
-        date1 = ''
-        date = ''
-        iteration = 0
-
+        
         if len(all_photo) > 5:
             iteration = 5
         else:
             iteration = len(all_photo)
-            
-        for i in range(iteration):
-            for i2 in range(len(all_photo[i]['sizes'])):
-                if height < all_photo[i]['sizes'][i2]['height'] and width < all_photo[i]['sizes'][i2]['width']:
-                    height = all_photo[i]['sizes'][i2]['height']
-                    width = all_photo[i]['sizes'][i2]['width']
-                    url_max = all_photo[i]['sizes'][i2]['url']
-                    likes = all_photo[i]['likes']['count']
-                    size = all_photo[i]['sizes'][i2]['type']
-                    file_name = str(likes) + '.jpg'
-                    size_type = str(size)
-                    date = all_photo[i]['date']
-                    date = datetime.datetime.fromtimestamp(date)
-                    date = date.strftime('%Y-%m-%d')
-            if file_name in file_name_list:
-                file_name = str(f'{likes}{date}.jpg')
-            file_name_list.append(file_name)
-            photo_dict = [{
-                "file_name": file_name,
-                "size": size_type
-                }]
-            ya.create_file_photo(f'Сourse_Work/{file_name}', url_max)
-            photo_dict_all.append(photo_dict)
-            height = 0
-            width = 0
-            url_max = ''
-            progress_bar()
+        height = 0
+        width = 0
+        photo_dict_all = []
+        file_name_list = []
+        iteration2 = 0        
+     
+        for item in all_photo:
+            iteration2 += 1
+            if iteration2 <= iteration:
+                for size in item['sizes']:
+                    if height < size['height'] and width < size['width']:
+                        height = size['height']
+                        width = size['width']
+                        url_max = size['url']
+                        likes = item['likes']['count']
+                        size_photo = size['type']
+                        file_name = str(likes) + '.jpg'
+                        size_type = str(size_photo)
+                        date = item['date']
+                        date = datetime.datetime.fromtimestamp(date)
+                        date = date.strftime('%Y-%m-%d')
+                
+                if file_name in file_name_list:
+                    file_name = str(f'{likes}{date}.jpg')
+                file_name_list.append(file_name)
+                photo_dict = [{
+                    "file_name": file_name,
+                    "size": size_type
+                    }]
+                ya.create_file_photo(f'Сourse_Work/{file_name}', url_max)
+                photo_dict_all.append(photo_dict)
+                height = 0
+                width = 0
+                url_max = ''
+                progress_bar()
+            else:
+                continue
                 
         with open("test.json", "w") as file:
             json.dump(photo_dict_all, file, ensure_ascii=False, indent=2)
@@ -135,13 +135,12 @@ def logg_str():
     logging.error("An ERROR")
     logging.critical("A message of CRITICAL severity")
 
-logg_str()
+if __name__ == '__main__':
 
-id_vk = input('Введите id пользователя vk: ')
-token_ya = input('Введите токен с Полигона Яндекс.Диска: ')
-
-ya = YandexDisk(token_ya) # токен с Полигона Яндекс.Диска
-ya.create_folder('Сourse_Work')
-
-vkontakte = VK_USER
-vkontakte.vk_info(id_vk) # ID id пользователя VK
+    logg_str()
+    user_id = input('Введите id пользователя vk: ')
+    token_ya = input('Введите токен с Полигона Яндекс.Диска: ')
+    ya = YandexDisk(token_ya) # токен с Полигона Яндекс.Диска
+    ya.create_folder('Сourse_Work')
+    vkontakte = VK_USER(user_id)
+    vkontakte.vk_info() # ID id пользователя VK
