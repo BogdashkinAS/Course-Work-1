@@ -1,19 +1,19 @@
-2022-11-15 22:35:00,103 DEBUG A DEBUG Message
-2022-11-15 22:35:00,103 INFO An INFO
-2022-11-15 22:35:00,103 WARNING A WARNING
-2022-11-15 22:35:00,103 ERROR An ERROR
-2022-11-15 22:35:00,103 CRITICAL A message of CRITICAL severity
-2022-11-15 22:35:34,725 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2022-11-15 22:35:35,300 DEBUG https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=%D0%A1ourse_Work HTTP/1.1" 201 122
-2022-11-15 22:35:35,304 DEBUG Starting new HTTPS connection (1): api.vk.com:443
-2022-11-15 22:35:35,434 DEBUG https://api.vk.com:443 "GET /method/photos.get?user_id=228902807&access_token=vk1.a.0tOniSDm-CY_XBTMXbB4LjWuzH_fYz9xsMgC2W_16_KEajNniGWK2bgzfd6yYshedEkicqPuiyAK-xe4BA8B7wtzs0pN2mzA9MCF8xXKUr5_Z1cJC5tiJatknWAHMr-5Z3m9zVPg4R-4a4ecj_VfcsayFomTlTyKI3jFMhxCoCXg7gQ6gj3NHR-ovF_MwOmFIUXfWltp9NHTUZhaar1U2Q&v=5.131&album_id=profile&extended=1&photo_sizes=1 HTTP/1.1" 200 8722
-2022-11-15 22:35:35,441 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2022-11-15 22:35:35,892 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/8.jpg&url=https%3A//sun9-west.userapi.com/sun9-9/s/v1/if2/aSnB1tfVUt6TnsE0j2NEiJKqUi-2aNYBP-Rjmxepy2bSm7NAn1XAW9MP2SmcCYmfAKYVt7TbEDI7CrhqPksB11e4.jpg%3Fsize%3D2560x1920%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
-2022-11-15 22:35:36,407 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2022-11-15 22:35:36,763 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/7.jpg&url=https%3A//sun9-east.userapi.com/sun9-60/s/v1/if2/hRGz-bFa8tf1hHWHJ5zyQr5MVP8dKbekmfZjOp8H-4l50GxKgTp5cgyWXni3a1EEgp21mtJ4oZ_ffvrcs0DIlwsx.jpg%3Fsize%3D2560x1920%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
-2022-11-15 22:35:37,274 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2022-11-15 22:35:38,071 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/5.jpg&url=https%3A//sun9-west.userapi.com/sun9-9/s/v1/if1/BU7WCP2gO8tYIaxE1PIOocTiE0FGLPqiQFtvUM8y8PXTD8XMVjraSmsl28a8sdskDkqsfg8L.jpg%3Fsize%3D1536x2048%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
-2022-11-15 22:35:38,579 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2022-11-15 22:35:39,084 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/6.jpg&url=https%3A//sun9-east.userapi.com/sun9-44/s/v1/if1/fBNclV0fNo5zqEYCedL3EAMdFUXRXbw35cTa0TozKm--32cL0jUAmFF-kwCmdItXnl23dMmK.jpg%3Fsize%3D1536x2048%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
-2022-11-15 22:35:39,595 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
-2022-11-15 22:35:39,935 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/72015-08-14.jpg&url=https%3A//sun9-east.userapi.com/sun9-59/s/v1/if1/3up4_N3e_13pwpKVTkeAFqyFjGD9wQD140PD-3IygpRgTGRH2BJ16axJWzNz2ke2IM-g95Zd.jpg%3Fsize%3D1536x2048%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+2022-11-15 22:40:50,057 DEBUG A DEBUG Message
+2022-11-15 22:40:50,057 INFO An INFO
+2022-11-15 22:40:50,057 WARNING A WARNING
+2022-11-15 22:40:50,057 ERROR An ERROR
+2022-11-15 22:40:50,057 CRITICAL A message of CRITICAL severity
+2022-11-15 22:41:29,309 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2022-11-15 22:41:29,639 DEBUG https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=%D0%A1ourse_Work HTTP/1.1" 201 122
+2022-11-15 22:41:29,642 DEBUG Starting new HTTPS connection (1): api.vk.com:443
+2022-11-15 22:41:29,755 DEBUG https://api.vk.com:443 "GET /method/photos.get?user_id=228902807&access_token=vk1.a.0tOniSDm-CY_XBTMXbB4LjWuzH_fYz9xsMgC2W_16_KEajNniGWK2bgzfd6yYshedEkicqPuiyAK-xe4BA8B7wtzs0pN2mzA9MCF8xXKUr5_Z1cJC5tiJatknWAHMr-5Z3m9zVPg4R-4a4ecj_VfcsayFomTlTyKI3jFMhxCoCXg7gQ6gj3NHR-ovF_MwOmFIUXfWltp9NHTUZhaar1U2Q&v=5.131&album_id=profile&extended=1&photo_sizes=1 HTTP/1.1" 200 8722
+2022-11-15 22:41:29,763 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2022-11-15 22:41:30,105 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/8.jpg&url=https%3A//sun9-west.userapi.com/sun9-9/s/v1/if2/aSnB1tfVUt6TnsE0j2NEiJKqUi-2aNYBP-Rjmxepy2bSm7NAn1XAW9MP2SmcCYmfAKYVt7TbEDI7CrhqPksB11e4.jpg%3Fsize%3D2560x1920%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+2022-11-15 22:41:30,615 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2022-11-15 22:41:30,905 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/7.jpg&url=https%3A//sun9-east.userapi.com/sun9-60/s/v1/if2/hRGz-bFa8tf1hHWHJ5zyQr5MVP8dKbekmfZjOp8H-4l50GxKgTp5cgyWXni3a1EEgp21mtJ4oZ_ffvrcs0DIlwsx.jpg%3Fsize%3D2560x1920%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+2022-11-15 22:41:31,417 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2022-11-15 22:41:31,809 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/5.jpg&url=https%3A//sun9-west.userapi.com/sun9-9/s/v1/if1/BU7WCP2gO8tYIaxE1PIOocTiE0FGLPqiQFtvUM8y8PXTD8XMVjraSmsl28a8sdskDkqsfg8L.jpg%3Fsize%3D1536x2048%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+2022-11-15 22:41:32,320 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2022-11-15 22:41:32,746 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/6.jpg&url=https%3A//sun9-east.userapi.com/sun9-44/s/v1/if1/fBNclV0fNo5zqEYCedL3EAMdFUXRXbw35cTa0TozKm--32cL0jUAmFF-kwCmdItXnl23dMmK.jpg%3Fsize%3D1536x2048%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+2022-11-15 22:41:33,256 DEBUG Starting new HTTPS connection (1): cloud-api.yandex.net:443
+2022-11-15 22:41:33,619 DEBUG https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=%D0%A1ourse_Work/72015-08-14.jpg&url=https%3A//sun9-east.userapi.com/sun9-59/s/v1/if1/3up4_N3e_13pwpKVTkeAFqyFjGD9wQD140PD-3IygpRgTGRH2BJ16axJWzNz2ke2IM-g95Zd.jpg%3Fsize%3D1536x2048%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
