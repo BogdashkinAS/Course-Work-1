@@ -138,9 +138,10 @@ def logg_str():
 if __name__ == '__main__':
 
     logg_str()
+    
     user_id = input('Введите id пользователя vk: ')
     token_ya = input('Введите токен с Полигона Яндекс.Диска: ')
-    ya = YandexDisk(token_ya) # токен с Полигона Яндекс.Диска
+    ya = YandexDisk(token_ya) #  токен с Полигона Яндекс.Диска
     ya.create_folder('Сourse_Work')
     vkontakte = VK_USER(user_id)
-    vkontakte.vk_info() # ID id пользователя VK
+    vkontakte.vk_info() #  ID id пользователя VK
